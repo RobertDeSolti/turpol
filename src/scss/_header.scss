@@ -1,0 +1,42 @@
+.section-header{
+	background: transparent;
+	position: relative;
+	z-index: 11;
+	.section-wrapper {
+		display: flex;
+		flex-shrink: 1;
+		max-width: 1160px;
+		margin: 45px auto 0;
+		display: flex;
+		flex-wrap: wrap;
+		align-items:center;
+		justify-content: space-between;
+		
+	}
+
+	&-logo {
+		max-width: 82px;
+		&__img {
+			&-svg {
+				width: 82px;
+			}
+		}
+	}
+	&-menu {
+		
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+			font-family: Lato;
+			list-style: none;
+			&-item {
+				margin-left: 80px;
+				&-link {
+					text-decoration: none;
+					font-size: 24px;
+					color: $white;
+				}
+			}
+		}
+	}
+}
