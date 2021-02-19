@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom'
 import './index.css'
 function BookList() {
   return (
-    <section className='bookList'>
+    <section className='booklist'>
       <Book />
     </section>
   )
