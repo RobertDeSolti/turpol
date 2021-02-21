@@ -1,6 +1,6 @@
-@import "../scss/mixins";
-@import "../scss/colors";
-@import "../scss/icons";
+@import "./mixins.scss";
+@import "./colors.scss";
+@import "./icons.scss";
 
 .section-inspiration{
 	margin-bottom: 130px;
@@ -20,7 +20,6 @@
 			content: ' ';
 			position: absolute;
 			border: 2px solid #006DFE;
-			height: 2px;
 			width: 250px;
 			bottom: 0;
 		}
@@ -44,7 +43,6 @@
 				padding-left: 25px;
 			}
 		}
-
 	}
 	&__content{
 		padding-top: 50px;
@@ -71,7 +69,8 @@
 				z-index: 5;
 			}
 			&__image{
-				height: 355px;
+				height: 100%;
+				width: 100%;
 				object-fit: cover;
 			}
 			&__tittle{

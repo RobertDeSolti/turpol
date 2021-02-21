@@ -2,35 +2,36 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 // CSS
-import './scss/secion-toplist.scss'
+import './scss/section-toplist.scss'
 // setup vars
 const firstCard = {
   tittle: 'ZAKOPANE',
-  img: 'img/b5_zakopane.jpg'
-};
+  img: 'img/b5_zakopane.jpg',
+}
 const secondCard = {
   tittle: 'POZNAN',
-  img: 'img/b5_poznan.jpg'
-};
+  img: 'img/b5_poznan.jpg',
+}
 const thirdCard = {
   tittle: 'CRACOW',
-  img: 'img/b5_cracow.jpg'
-};
+  img: 'img/b5_cracow.jpg',
+}
 const fourthCard = {
   tittle: 'WARSAW',
-  img: 'img/b5_warsaw.jpg'
-};
+  img: 'img/b5_warsaw.jpg',
+}
 const fifthCard = {
   tittle: 'JAWORKI',
-  img: 'img/b5_jaworki.jpg'
-};
+  img: 'img/b5_jaworki.jpg',
+}
 const sixthCard = {
   tittle: 'GDANSK',
-  img: 'img/b5_gdansk.jpg'
-};
-const like_icon = 'img/svg/like.svg';
-const comm_icon = 'img/svg/comm.svg';
-const content = 'Jump off balcony, onto strangers head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.';
+  img: 'img/b5_gdansk.jpg',
+}
+const like_icon = 'img/svg/like.svg'
+const comm_icon = 'img/svg/comm.svg'
+const content =
+  'Jump off balcony, onto strangers head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.'
 
 function SectionToplist() {
   return (
@@ -47,8 +48,8 @@ function SectionToplist() {
         <Postcard img={sixthCard.img} tittle={sixthCard.tittle} />
       </div>
     </div>
-  );
-};
+  )
+}
 
 const Postcard = (props) => {
   return (
@@ -71,11 +72,10 @@ const Postcard = (props) => {
       </div>
       <p className='postcard__content'>{content}</p>
       <div className='postcard__button'>
-        <button className='medium'>
-        </button>
+        <button className='medium'></button>
       </div>
     </div>
   )
-};
+}
 
-ReactDOM.render(<SectionToplist />, document.getElementById('toplist'));
+ReactDOM.render(<SectionToplist />, document.getElementById('toplist'))

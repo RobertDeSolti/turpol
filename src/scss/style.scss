@@ -1,15 +1,24 @@
-@import "../scss/global.scss";
-@import "../scss/mixins";
-@import "../scss/colors";
-@import "../scss/icons";
-@import "../scss/header";
-@import "../scss/section-footer";
-@import "../scss/section-banner";
-@import "../scss/section-benefits";
-@import "../scss/section-inspiration";
-@import "../scss/section-perfection";
-@import "../scss/section-toplist";
-@import "../scss/section-video";
+@import "./global.scss";
+@import "./mixins.scss";
+@import "./colors.scss";
+@import "./icons.scss";
+@import "../components/section-header.scss";
+@import "./section-banner.scss";
+@import "./section-benefits.scss";
+@import "./section-inspiration.scss";
+@import "./section-perfection.scss";
+@import "./section-toplist.scss";
+@import "./section-video.scss";
+@import "./section-footer.scss";
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+}
 
 
 

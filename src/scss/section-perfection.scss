@@ -1,6 +1,6 @@
-@import "../scss/mixins";
-@import "../scss/colors";
-@import "../scss/icons";
+@import "./mixins.scss";
+@import "./colors.scss";
+@import "./icons.scss";
 
 .section-perfection{
 	margin-bottom: 130px;
@@ -48,7 +48,7 @@
 				color: $txtMain;
 				margin-bottom: 65px;
 			}
-			.link{
+			.navigation{
 				display: flex;
 				align-items: center;
 				&__text{

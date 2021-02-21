@@ -1,5 +1,9 @@
+@import "../scss/mixins.scss";
+@import "../scss/colors.scss";
+@import "../scss/icons.scss";
+
 .section-header{
-	background: transparent;
+	opacity: 1;
 	position: relative;
 	z-index: 11;
 	.section-wrapper {
@@ -13,24 +17,26 @@
 		justify-content: space-between;
 		
 	}
-	&-logo {
+	&__logo {
 		max-width: 82px;
-		&__img {
-			&-svg {
+		.link {
+			&__svg {
 				width: 82px;
 			}
 		}
 	}
-	&-menu {		
-		&__list {
+	&__menu {		
+		.list {
 			display: flex;
 			flex-wrap: wrap;
-			font-family: Lato;
+			font-family: 'Lato';
 			list-style: none;
 			&-item {
 				margin-left: 80px;
-				&-link {
+				&__link {
 					text-decoration: none;
+					text-decoration-line: none;
+					text-decoration-color: $white;
 					font-size: 24px;
 					color: $white;
 				}

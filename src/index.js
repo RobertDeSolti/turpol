@@ -1,1 +1,9 @@
-//
+import './section-header'
+import './scss/style.scss'
+import './section-banner'
+import './section-benefits'
+import './section-inspiration'
+import './section-perfection'
+import './section-toplist'
+import './section-video'
+import './section-footer'

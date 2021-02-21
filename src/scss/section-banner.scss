@@ -1,6 +1,6 @@
-@import "../scss/mixins";
-@import "../scss/colors";
-@import "../scss/icons";
+@import "./mixins.scss";
+@import "./colors.scss";
+@import "./icons.scss";
 
 .section-banner {
 	background: url(../img/cta_block.jpg) no-repeat center;
@@ -10,9 +10,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
-	margin-top: -135px;	
 	margin-bottom: 130px;
-	
 	.section-wrapper {
 		display: flex;
 		flex-direction: column;
@@ -24,7 +22,6 @@
 		position: relative;
 		z-index: 10;
 	}
-
 	&::before{
 		content: ' ';
 		position: absolute;
@@ -35,11 +32,8 @@
 		background: linear-gradient(180deg, rgba(53, 66, 103, 0.0001) 0%, #151824 95.04%);
 		z-index: 5;
 	}
-
-	
 	&-content{
 		padding-top: 260px;
-
 		&__tittle{
 			font-size: 50px;
 			line-height: 60px;
@@ -47,8 +41,6 @@
 			color: $white;
 			margin-bottom: 30px;
 			width: 60%;
-			
-
 		}
 		&__subtittle{
 			font-size: 20px;
@@ -56,29 +48,8 @@
 			font-weight: 400;
 			margin-bottom: 70px;
 			width: 60%;
-
 		}
 		&__form{
-			&-search{
-				width: 300px;
-				padding-left: 50px;
-				padding-bottom: 20px;
-				margin-right: 60px;
-				color: $white;
-				background: transparent url(../img/svg/oval.svg) no-repeat left 11px;
-				background-size: 20px;
-				border:none;
-				border-bottom: solid 2px #fff;
-				outline: none;
-				&::placeholder{
-					color: $white;
-					font-size: 18px;
-					font-weight: 500;
-				}
-				
-
-
-			}
 			&-submit{
 				font-size: 22px;
 				font-weight: 500;
@@ -88,7 +59,6 @@
 				border: none;
 				border-radius: 5px;
 				outline: none;
-
 			}
 		}
 	}
