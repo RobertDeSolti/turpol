@@ -24,14 +24,16 @@ const content =
 
 function SectionBenefits() {
   return (
-    <div className='section-wrapper'>
-      <h2 className='section-benefits__tittle'>Benefits of Odigo</h2>
-      <div className='section-benefits__cards'>
-        <Benefitcard img={firstBenefit.img} tittle={firstBenefit.tittle} />
-        <Benefitcard img={secondBenefit.img} tittle={secondBenefit.tittle} />
-        <Benefitcard img={thirdBenefit.img} tittle={thirdBenefit.tittle} />
-      </div>
-    </div>
+	<div className="section-benefits">
+		<div className='section-wrapper'>
+			<h2 className='section-benefits__tittle'>Benefits of Odigo</h2>
+			<div className='section-benefits__cards'>
+				<Benefitcard img={firstBenefit.img} tittle={firstBenefit.tittle} />
+				<Benefitcard img={secondBenefit.img} tittle={secondBenefit.tittle} />
+				<Benefitcard img={thirdBenefit.img} tittle={thirdBenefit.tittle} />
+			</div>
+		</div>
+	</div>
   )
 }
 

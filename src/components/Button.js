@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './button.css';
+import './button.scss';
 
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+export const Button = ({ primary, backgroundColor, size, type, label, ...props }) => {
+  const mode = primary ? 'storybook-button_primary' : 'storybook-button_secondary';
   return (
     <button
-      type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      type={type}
+      className={['storybook-button', `storybook-button_${size}`, mode].join(' ')}
       style={backgroundColor && { backgroundColor }}
       {...props}
     >
@@ -40,6 +40,9 @@ Button.propTypes = {
    * Optional click handler
    */
   onClick: PropTypes.func,
+
+  type: PropTypes.oneOf(['button', 'submit']),
+
 };
 
 Button.defaultProps = {

@@ -50,6 +50,9 @@
 			width: 60%;
 		}
 		&__form{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
 			&-submit{
 				font-size: 22px;
 				font-weight: 500;

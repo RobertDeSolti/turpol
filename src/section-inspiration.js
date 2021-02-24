@@ -29,24 +29,26 @@ const thirdSmallcard = {
 
 function SectionInspiration() {
   return (
-    <div className='section-inner'>
-      <div className='section-inspiration__head'>
-        <div className='tittle'>Get inspired for your next trip</div>
-        {/* <div className="navigation">
-						<div className="navigation__text">VIEW ALL</div>
-						<div className="navigation__icon">
-							<img src="img/svg/arrow.svg" alt="svg" className="svg" />
-						</div>
-					</div> */}
-      </div>
-      <div className='section-inspiration__content'>
-        <Largecard img={firstLargecard.img} tittle={firstLargecard.tittle} />
-        <Largecard img={secondLargecard.img} tittle={secondLargecard.tittle} />
-        <Smallcard img={firstSmallcard.img} tittle={firstSmallcard.tittle} />
-        <Smallcard img={secondSmallcard.img} tittle={secondSmallcard.tittle} />
-        <Smallcard img={thirdSmallcard.img} tittle={thirdSmallcard.tittle} />
-      </div>
-    </div>
+	<div className="section-inspiration">
+		<div className='section-inner'>
+			<div className='section-inspiration__head'>
+				<div className='tittle'>Get inspired for your next trip</div>
+				{/* <div className="navigation">
+								<div className="navigation__text">VIEW ALL</div>
+								<div className="navigation__icon">
+									<img src="img/svg/arrow.svg" alt="svg" className="svg" />
+								</div>
+							</div> */}
+			</div>
+			<div className='section-inspiration__content'>
+				<Largecard img={firstLargecard.img} tittle={firstLargecard.tittle} />
+				<Largecard img={secondLargecard.img} tittle={secondLargecard.tittle} />
+				<Smallcard img={firstSmallcard.img} tittle={firstSmallcard.tittle} />
+				<Smallcard img={secondSmallcard.img} tittle={secondSmallcard.tittle} />
+				<Smallcard img={thirdSmallcard.img} tittle={thirdSmallcard.tittle} />
+			</div>
+		</div>
+	</div>
   )
 }
 

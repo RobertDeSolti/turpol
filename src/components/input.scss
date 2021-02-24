@@ -9,7 +9,7 @@
 	color: $white;
 
 	&__primary{
-		background: transparent url(../img/svg/oval.svg) no-repeat left 1px;
+		background: transparent url(../img/svg/oval.svg) no-repeat left 13px;
 		background-size: 20px;
 		border:none;
 		border-bottom: solid 2px #fff;
@@ -23,7 +23,7 @@
 
 	}
 	&__witherror{
-		background: transparent url(../img/svg/oval_err.svg) no-repeat left top;
+		background: transparent url(../img/svg/oval_err.svg) no-repeat left 13px;
 		background-size: 20px;
 		border:none;
 		border-bottom: solid 2px rgb(156, 18, 18);

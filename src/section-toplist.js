@@ -1,5 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { Pressbtn } from './components/Button.stories'
+
 
 // CSS
 import './scss/section-toplist.scss'
@@ -35,19 +37,21 @@ const content =
 
 function SectionToplist() {
   return (
-    <div className='section-inner'>
-      <div className='section-toplist__head'>
-        <h2 className='tittle'>Today top places to visit</h2>
-      </div>
-      <div className='section-toplist__posts'>
-        <Postcard img={firstCard.img} tittle={firstCard.tittle} />
-        <Postcard img={secondCard.img} tittle={secondCard.tittle} />
-        <Postcard img={thirdCard.img} tittle={thirdCard.tittle} />
-        <Postcard img={fourthCard.img} tittle={fourthCard.tittle} />
-        <Postcard img={fifthCard.img} tittle={fifthCard.tittle} />
-        <Postcard img={sixthCard.img} tittle={sixthCard.tittle} />
-      </div>
-    </div>
+	<div className="section-toplist">
+		<div className='section-inner'>
+			<div className='section-toplist__head'>
+				<h2 className='tittle'>Today top places to visit</h2>
+			</div>
+			<div className='section-toplist__posts'>
+				<Postcard img={firstCard.img} tittle={firstCard.tittle} />
+				<Postcard img={secondCard.img} tittle={secondCard.tittle} />
+				<Postcard img={thirdCard.img} tittle={thirdCard.tittle} />
+				<Postcard img={fourthCard.img} tittle={fourthCard.tittle} />
+				<Postcard img={fifthCard.img} tittle={fifthCard.tittle} />
+				<Postcard img={sixthCard.img} tittle={sixthCard.tittle} />
+			</div>
+		</div>
+	</div>
   )
 }
 
@@ -72,7 +76,7 @@ const Postcard = (props) => {
       </div>
       <p className='postcard__content'>{content}</p>
       <div className='postcard__button'>
-        <button className='medium'></button>
+		<Pressbtn  label='SEE MORE' size='medium' type='button' />
       </div>
     </div>
   )
